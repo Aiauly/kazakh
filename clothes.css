@@ -1,0 +1,62 @@
+body{
+    background-color: black;
+    
+    background-image: url("");
+}
+ul.b {
+list-style-type: square;
+color: rgb(245, 242, 235);
+}
+ul.b1 {
+list-style-type: square;
+margin-left: 800px;
+}
+.lists{
+display: flex;
+
+}
+
+.lists  a {
+text-decoration: none;
+color: rgb(217, 183, 121);
+font-size: 1.3em;
+
+}
+
+.lists  a:hover{
+color: #f18a04 ;
+}
+* {
+    box-sizing: border-box;
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  .flex-item-left {
+
+    padding: 10px;
+    flex: 50%;
+  }
+  
+  .flex-item-right {
+  
+    padding: 10px;
+    flex: 50%;
+  }
+  .flex-item-middle {
+    
+    padding: 10px;
+    flex: 50%;
+  }
+  
+  /* Responsive layout - makes a one column-layout instead of two-column layout */
+  @media (max-width: 1400px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  }
