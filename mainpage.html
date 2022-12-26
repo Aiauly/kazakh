@@ -82,4 +82,25 @@
 
       </footer>
 </body>
+<script>    
+function reg(event){
+  event.preventDefault();        let form = event.target;        let formdata = new FormData (form);        fetch('http://localhost:8080/registration.php',{
+      method:'post',            body:formdata
+  }).then(res =>{
+      return res.text()
+  }).then(aa =>{
+      alert(aa)
+  })
+}
+function login(event){
+  event.preventDefault();        let form = event.target;        let formdata = new FormData (form);        fetch('http://localhost:8080/login.php',{
+      method:'post',            body:formdata
+  })
+      .then(result=>{
+          return result.text()
+      })
+      .then(final_result=>{
+          console.log(final_result);            })
+}
+</script>
 </html>
